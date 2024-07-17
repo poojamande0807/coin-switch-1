@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why it Matters</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes yellowBackground1 {
+            0%, 100% { background-color: transparent; }
+            10%, 40% { background-color: rgb(177, 74, 10); }
+        }
+
+        @keyframes yellowBackground3 {
+            0%, 100% { background-color: transparent; }
+            30%, 60% { background-color: rgb(177, 74, 10); }
+        }
+
+        @keyframes yellowBackground4 {
+            0%, 100% { background-color: transparent; }
+            50%, 80% { background-color: rgb(177, 74, 10); }
+        }
+
+        .icon-wrapper {
+            transition: transform 0.2s ease-in-out;
+            padding: 10px;
+        }
+
+        .icon-wrapper-1 {
+            animation: yellowBackground1 3s infinite;
+        }
+
+        .icon-wrapper-3 {
+            animation: yellowBackground3 1s infinite;
+        }
+
+        .icon-wrapper-4 {
+            animation: yellowBackground4 2s infinite;
+        }
+
+        .text-wrapper {
+            transition: color 0.3s ease-in-out;
+        }
+
+
+        .card:hover .icon-wrapper {
+            transform: scale(1.1);
+        }
+
+        .card:hover .text-wrapper {
+            color: #5a67d8; 
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="">
+
+<div class="container mx-auto p-4">
+    <h2 class="font-extrabold text-[#494b57] text-4xl text-center">Why it Matters?</h2>
+    <div class="flex justify-evenly flex-wrap gap-10 mt-16">
+        <div class="card min-w-[260px] text-center">
+            <div class="w-auto h-[140px] flex justify-center items-center mb-4 icon-wrapper icon-wrapper-1">
+                <img alt="1" loading="lazy" width="83" height="117" decoding="async"
+                     src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/partnership.svg">
+            </div>
+            <p class="font-bold text-[#494b57] text-lg text-wrapper">Partnership with India’s<br> largest wealth tech<br> destination</p>
+        </div>
+        <div class="card min-w-[260px] text-center">
+            <div class="w-auto h-[140px] flex justify-center items-center mb-4 icon-wrapper">
+                <img alt="2" loading="lazy" width="117" height="124" decoding="async"
+                     src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/network.svg">
+            </div>
+            <p class="font-bold text-[#494b57] text-lg text-wrapper">Access to a network of 70+<br> global venture capital<br> partners</p>
+        </div>
+        <div class="card min-w-[260px] text-center">
+            <div class="w-auto h-[140px] flex justify-center items-center mb-4 icon-wrapper icon-wrapper-3">
+                <img alt="3" loading="lazy" width="140" height="106" decoding="async"
+                     src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/capital.svg">
+            </div>
+            <p class="font-bold text-[#494b57] text-lg text-wrapper">Capital infusion up to<br> $250,000</p>
+        </div>
+        <div class="card min-w-[260px] text-center">
+            <div class="w-auto h-[140px] flex justify-center items-center mb-4 icon-wrapper icon-wrapper-4">
+                <img alt="4" loading="lazy" width="112" height="113" decoding="async"
+                     src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/mentorship.svg">
+            </div>
+            <p class="font-bold text-[#494b57] text-lg text-wrapper">Mentorship from<br> in-house experts</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
